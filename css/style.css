@@ -1,0 +1,497 @@
+:root {
+    --navy: #001429;
+    --navy-dark: #000B18;
+    --accent: #7FA8D6;
+    --text: #E6EAF0;
+    --muted: #A7B0BC;
+    --border: rgba(127, 168, 214, 0.12);
+}
+
+.nav-link.lang-active {
+    color: var(--accent);
+}
+
+/* =========================
+   BASE
+========================= */
+.inner-page .container {
+    padding-top: 2rem;
+}
+
+body {
+    background-color: var(--navy);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+    font-size: clamp(4rem, 10vw, 7rem);
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+    background-color: var(--navy-dark);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.nav-link {
+    color: var(--muted);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* =========================
+   NAVBAR TOGGLER (HAMBURGER)
+========================= */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 10rem 1rem;
+    background: radial-gradient(
+        circle at top,
+        rgba(127, 168, 214, 0.08),
+        var(--navy)
+    );
+}
+
+.hero h1 {
+    font-size: clamp(4rem, 10vw, 7rem);
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: var(--muted);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.custom-button {
+    border: 1px solid var(--accent);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: var(--accent);
+    color: var(--navy-dark);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 6rem 1rem;
+    background-color: var(--navy-dark);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    border: 1px solid var(--border);
+}
+
+/* =========================
+   FEATURED WORK
+========================= */
+
+.featured-work {
+    padding: 6rem 1rem;
+    background-color: var(--navy);
+}
+
+.featured-work h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.work-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .work-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-grid {
+    column-count: 1;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+    color: var(--muted);
+}
+
+.footer-credit a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer-credit a:hover {
+    opacity: 0.7;
+}
+
+/* =========================
+   FORMS / FAQ / ETC
+========================= */
+
+details {
+    border-bottom: 1px solid var(--border);
+    padding: 1.2rem 0;
+}
+
+summary {
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+}
+
+details p,
+.terms-content p,
+.booking-notice p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.back-link {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--muted);
+}
+
+.terms-nav {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.terms-content li {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* everything is ink-space, not white sections */
+section {
+    background-color: transparent;
+}
+
+.booking-notice {
+    max-width: 650px;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+
+.booking-notice .custom-button {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text);
+}
+
+/* framing bars */
+.lang-frame {
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    opacity: 0.6;
+}
+
+/* divider */
+.lang-divider {
+    color: var(--border);
+    font-family: 'Space Mono', monospace;
+}
+
+/* language links */
+.nav-link.lang {
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--text); /* now white */
+    padding: 0;
+    opacity: 0.7;
+}
+
+.nav-link.lang:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+.lang-divider {
+    color: var(--border);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+}
+
+.nav-link.lang {
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--muted);
+    padding: 0;
+}
+
+.nav-link.lang:hover {
+    color: var(--accent);
+}
+
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  display: block;
+  break-inside: avoid;
+}
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+
+.ig-button:hover {
+  background: #ffffff;
+  color: #fff;
+}
+
+.work-link {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.work-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  transform: scaleX(0.4);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.work-link:hover::after {
+  transform: scaleX(1);
+}
+
+.gallery-intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.gallery-subtext {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.gallery-links a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 10px;
+  position: relative;
+}
+
+.gallery-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.gallery-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.ig-button {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.ig-button:hover {
+  background: #ffffff;
+  color: #000;
+}
+.gallery-links {
+  border: none;
+  padding-bottom: 0;
+}
+
+.gallery-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.instagram-section {
+  background-color: var(--navy-dark);
+  padding: 6rem 1rem;
+  text-align: center;
+}

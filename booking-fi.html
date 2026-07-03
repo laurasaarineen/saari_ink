@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saari_ink | ajanvaraus</title>
+    <body class="inner-page"></body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">saari_ink</a>
+
+        <div class="ms-auto d-flex align-items-center">
+
+            <!-- NAV LINKS + HAMBURGER GROUP -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item"><a class="nav-link" href="index-fi.html">Etusivu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio-fi.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking-fi.html">Ajanvaraus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq-fi.html">UKK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aftercare-fi.html">Hoito-ohjeet</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- HAMBURGER (now aligned with right side group) -->
+            <button class="navbar-toggler ms-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- LANGUAGE -->
+            <div class="lang-switch ms-3">
+
+                <span class="lang-frame">|</span>
+                <a class="nav-link lang" href="index.html">EN</a>
+                <span class="lang-divider">/</span>
+                <a class="nav-link lang" href="booking-fi.html">FI</a>
+                <span class="lang-frame">|</span>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+    <!-- BOOKING -->
+    <section class="booking-section">
+
+        <div class="container booking-container">
+
+            <h1>Ajanvaraus</h1>
+
+        
+            <iframe
+                data-tally-src="https://tally.so/embed/kdpe26?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="1365"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Contact form">
+            </iframe>
+
+        </div>
+
+        <div class="booking-notice">
+        <br>
+    <p>
+        Luethan varausehdot ennen ajan varaamista. Varaamalla ajan hyväksyt käytännöt koskien varausmaksua, ajan peruutuksia ja siirtoja sekä ajalle valmistautumista koskevia tietoja.
+    </p>
+
+    <a href="booking-terms-fi.html" class="btn custom-button">
+        Lue varausehdot
+    </a>
+
+</div>
+
+        
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>saari_ink © 2026</p>
+
+
+    </footer>
+
+    <!-- TALLY SCRIPT -->
+    <script>
+        var d = document,
+            w = "https://tally.so/widgets/embed.js",
+            v = function () {
+
+                if ("undefined" != typeof Tally) {
+                    Tally.loadEmbeds();
+
+                } else {
+
+                    d.querySelectorAll("iframe[data-tally-src]:not([src])")
+                        .forEach(function (e) {
+                            e.src = e.dataset.tallySrc;
+                        });
+                }
+            };
+
+        if ("undefined" != typeof Tally) {
+
+            v();
+
+        } else if (d.querySelector('script[src="' + w + '"]') == null) {
+
+            var s = d.createElement("script");
+
+            s.src = w;
+            s.onload = v;
+            s.onerror = v;
+
+            d.body.appendChild(s);
+        }
+    </script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
