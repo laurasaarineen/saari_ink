@@ -166,8 +166,8 @@ h4 {
 .about-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .about p {
@@ -178,11 +178,10 @@ h4 {
 }
 
 .about-image img {
-    width: 110%;
-    height: 550px;
-    object-fit: cover;
-    border-radius: 12px;
+    width: 100%;
+    height: auto;
     display: block;
+    border-radius: 12px;
     border: 1px solid var(--border);
 }
 
@@ -547,4 +546,19 @@ section {
 .signature-work {
     padding: 7rem 1rem;
     background-color: var(--navy-dark);
+}
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .about p {
+        max-width: 100%;
+    }
 }
