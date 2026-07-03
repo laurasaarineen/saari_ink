@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://saariink.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/fi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/portfolio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/portfolio/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/fi/portfolio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/portfolio/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/booking/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/booking/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/ajanvaraus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/booking/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/fi/ajanvaraus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/booking/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/ajanvaraus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/booking/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/ukk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/faq/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/fi/ukk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/ukk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/faq/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/aftercare/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/aftercare/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/hoito-ohjeet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/aftercare/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/fi/hoito-ohjeet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/aftercare/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/hoito-ohjeet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/aftercare/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/booking-terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/booking-terms/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/ajanvarausehdot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/booking-terms/"/>
+  </url>
+  <url>
+    <loc>https://saariink.com/fi/ajanvarausehdot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saariink.com/booking-terms/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://saariink.com/fi/ajanvarausehdot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saariink.com/booking-terms/"/>
+  </url>
+</urlset>
