@@ -147,8 +147,9 @@ h4 {
 
 .about {
     padding: 6rem 1rem;
-    background-color: var(--navy-dark);
+    background-color: var(--navy);
 }
+
 
 .about-grid {
     display: grid;
@@ -177,8 +178,8 @@ h4 {
 }
 
 .about-image img {
-    width: 100%;
-    height: 400px;
+    width: 110%;
+    height: 550px;
     object-fit: cover;
     border-radius: 12px;
     display: block;
@@ -494,4 +495,56 @@ section {
   background-color: var(--navy-dark);
   padding: 6rem 1rem;
   text-align: center;
+}
+
+.signature-work {
+    padding: 80px 0;
+}
+
+.signature-work h2 {
+    text-align: center;
+}
+
+.section-subtext {
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.75;
+}
+
+.signature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.signature-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.signature-grid img:hover {
+    transform: scale(1.03);
+}
+
+.sig-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 992px) {
+    .signature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .signature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.signature-work {
+    padding: 7rem 1rem;
+    background-color: var(--navy-dark);
 }
